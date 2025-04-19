@@ -514,17 +514,17 @@ body {
 
     .nav-tabs {
         justify-content: flex-end;
-        padding: 1rem;
+        padding: 0.5rem;
     }
     
     .nav-tabs a {
-        padding: 0.5rem 0.75rem;
-        margin: 0 0.15rem;
-        font-size: 0.7rem;
+        padding: 0.4rem 0.6rem;
+        margin: 0 0.1rem;
+        font-size: 0.65rem;
     }
     
     .nav-tabs a i {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
     
     .section {
