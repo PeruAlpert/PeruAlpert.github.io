@@ -205,7 +205,7 @@ body {
 }
 
 .profile-text h1 {
-    color: var(--primary-color);
+    color: white;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -468,6 +468,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.5s ease forwards;
+    color: white;
 }
 
 @keyframes fadeInUp {
@@ -513,14 +514,33 @@ body {
     }
 
     .nav-tabs {
-        justify-content: flex-end;
-        padding: 0.5rem;
+        justify-content: center;
+        padding: 4rem 0.5rem 0.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        position: fixed;
+        top: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo a {
+        justify-content: center;
+    }
+
+    .logo-text {
+        font-size: 1.25rem;
+        text-align: center;
     }
     
     .nav-tabs a {
         padding: 0.4rem 0.6rem;
         margin: 0 0.1rem;
-        font-size: 0.65rem;
+        /* font-size: 0.65rem; */
     }
     
     .nav-tabs a i {
@@ -560,14 +580,6 @@ body {
         font-size: 0.75rem;
     }
 
-    .logo {
-        left: 1rem;
-    }
-
-    .logo-text {
-        font-size: 1.25rem;
-    }
-
     .skills-grid,
     .contact-cards {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -601,6 +613,10 @@ body {
     .cv-link {
         padding: 0.5rem 1rem;
         font-size: 0.875rem;
+    }
+
+    .content-section {
+        margin-top: 140px;
     }
 }
 
@@ -711,6 +727,10 @@ body {
     margin-top: 1.5rem;
     transition: var(--transition);
     font-weight: 500;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 10;
 }
 
 .cv-link:hover {
