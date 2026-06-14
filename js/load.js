@@ -1,57 +1,43 @@
-/*
- *
- * akshay sharma 
- * fxn769@gmail.com
- * 5/7/2020
- * 
+/**
+ * Theme Toggle & Helper Logic
+ * Peru Alpert - Portfolio Page Helpers
  */
 
-var socialtags = [{
-    img: "img/github.png",
-    link: "https://github.com/PeruAlpert"
-},
-// {
-// img: "img/linkedin.png",
-// link: "https://www.linkedin.com/in/fgawly/"
-// },
-{
-    img: "img/whatsapp.png",
-    link: "https://wa.me/+201274932664"
-}, {
-    img: "img/mail.png",
-    link: "mailto:peroalbert@gmail.com"
-}, {
-    img: "img/download.png",
-    link: "PeruCV.pdf"
-}]
-
-function loadSocialIcons() {
-    var socialtext = ""
-    for (x in socialtags) {
-        var data = `<a class="center" href="` + socialtags[x].link + `"> <img class="center" style="padding: 5px!important;width: 40px;" src="` + socialtags[x].img + `"></a>`
-        socialtext += data
-    }
-    document.getElementById("social-list").innerHTML = socialtext;
-}
-
-loadSocialIcons()
-
 function dayNightToggle() {
-    var element = document.body;
-    element.classList.toggle("light-mode");
-    var check = window.localStorage.getItem('light-mode');
-    if (check == "light") {
-        window.localStorage.clear();
+    const body = document.body;
+    const isLight = body.classList.toggle('light-mode');
+    const toggleIcon = document.getElementById('toggle-icon');
+    
+    if (isLight) {
+        if (toggleIcon) toggleIcon.className = 'fas fa-sun';
+        localStorage.setItem('theme', 'light');
     } else {
-        window.localStorage.setItem('light-mode', 'light');
+        if (toggleIcon) toggleIcon.className = 'fas fa-moon';
+        localStorage.setItem('theme', 'dark');
     }
-
 }
 
 function checkDayNight() {
-    var check = window.localStorage.getItem('light-mode');
-    var element = document.body;
-    element.classList.add("light-mode");
+    const savedTheme = localStorage.getItem('theme');
+    const body = document.body;
+    const toggleIcon = document.getElementById('toggle-icon');
+    
+    if (savedTheme === 'light') {
+        body.classList.add('light-mode');
+        if (toggleIcon) toggleIcon.className = 'fas fa-sun';
+    } else {
+        body.classList.remove('light-mode');
+        if (toggleIcon) toggleIcon.className = 'fas fa-moon';
+    }
 }
 
-checkDayNight()
+// Self-init on load
+window.addEventListener('DOMContentLoaded', () => {
+    checkDayNight();
+    
+    // Set dynamic current year in footer if exists
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});

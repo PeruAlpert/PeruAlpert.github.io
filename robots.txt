@@ -1,0 +1,8 @@
+# Permitted search bots and AI crawlers
+User-agent: *
+Allow: /
+
+# Direct AI assistants and LLM scrapers to the structured markdown summary
+Sitemap: https://perualpert.github.io/llms.txt
+Disallow: /js/
+Disallow: /css/

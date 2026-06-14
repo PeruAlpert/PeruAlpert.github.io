@@ -4,252 +4,542 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Peru Alpert - React Native Developer Portfolio | Mobile App Development Expert" name="description">
-    <meta content="Peru Alpert, React Native, Mobile Development, iOS, Android, JavaScript, Portfolio" name="keywords">
-    <meta content="Peru Alpert https://github.com/PeruAlpert" name="author">
-    <meta property="og:title" content="Peru Alpert - React Native Developer">
-    <meta property="og:description" content="Portfolio showcasing React Native development projects and expertise in mobile app development">
-    <meta property="og:image" content="img/peruAlpert.jpg">
+    
+    <!-- SEO & Search Engine Optimization -->
+    <title>Peru Alpert | React Native Developer Portfolio</title>
+    <meta content="Peru Alpert - Experienced React Native Developer specializing in building high-performance iOS & Android mobile apps. View portfolio, CV, and projects." name="description">
+    <meta content="Peru Alpert, React Native Developer, Mobile Developer, iOS Developer, Android Developer, React Native Animations, Agora Live Stream, Gifted Chat, Cairo, Egypt" name="keywords">
+    <meta content="Peru Alpert" name="author">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Peru Alpert | React Native Developer Portfolio">
+    <meta property="og:description" content="Portfolio showcasing expert React Native mobile development projects, custom animations, real-time messaging, and integrations.">
+    <meta property="og:image" content="https://perualpert.github.io/img/peruAlpert.png">
     <meta property="og:url" content="https://perualpert.github.io">
+    
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <title>Peru Alpert - React Native Developer</title>
+    <meta name="twitter:title" content="Peru Alpert | React Native Developer Portfolio">
+    <meta name="twitter:description" content="Portfolio showcasing expert React Native mobile development projects, custom animations, real-time messaging, and integrations.">
+    <meta name="twitter:image" content="https://perualpert.github.io/img/peruAlpert.png">
+    
+    <!-- Structured Data (JSON-LD) for Search Engines & AIs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Peru Alpert",
+      "jobTitle": "React Native Developer",
+      "url": "https://perualpert.github.io",
+      "image": "https://perualpert.github.io/img/peruAlpert.png",
+      "sameAs": [
+        "https://github.com/PeruAlpert",
+        "https://www.linkedin.com/in/peru-alpert-b4b946171"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cairo",
+        "addressCountry": "Egypt"
+      },
+      "email": "peroalbert@gmail.com",
+      "telephone": "+201277444422",
+      "description": "Experienced React Native Developer with 5+ years of experience. Built efficient mobile apps, implementing advanced animations, Gifted Chat, and Agora live streaming.",
+      "knowsAbout": [
+        "React Native",
+        "Mobile App Development",
+        "iOS Development",
+        "Android Development",
+        "JavaScript",
+        "TypeScript",
+        "Redux Toolkit",
+        "React Navigation",
+        "Agora Live Streaming",
+        "Gifted Chat",
+        "Stripe Payments",
+        "Google Maps API"
+      ]
+    }
+    </script>
+
     <link href="img/favicon.ico" rel="shortcut icon" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap-grid.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="logo">
-        <a href="#about">
-            <span class="logo-text">Peru</span>
-            <span class="logo-text highlight">Alpert</span>
-        </a>
-    </div>
+    <!-- Background glowing accents -->
+    <div class="glow-bg bg-1"></div>
+    <div class="glow-bg bg-2"></div>
 
-    <nav class="nav-tabs">
-        <a href="#about" class="active">
-            <i class="fas fa-user"></i> About
-        </a>
-        <a href="#projects">
-            <i class="fas fa-code"></i> Projects
-        </a>
-        <a href="#contact">
-            <i class="fas fa-envelope"></i> Contact
-        </a>
-      
-    </nav>
+    <header class="navbar-header">
+        <div class="logo">
+            <a href="#about">
+                <span class="logo-text">Peru</span>
+                <span class="logo-text highlight">Alpert</span>
+            </a>
+        </div>
+        
+        <nav class="nav-tabs" aria-label="Main Navigation">
+            <a href="#about" class="nav-item active">
+                <i class="fas fa-user"></i> <span>About</span>
+            </a>
+            <a href="#projects" class="nav-item">
+                <i class="fas fa-code"></i> <span>Projects</span>
+            </a>
+            <a href="#contact" class="nav-item">
+                <i class="fas fa-envelope"></i> <span>Contact</span>
+            </a>
+            <button class="color-toggle-btn" onclick="dayNightToggle()" aria-label="Toggle light and dark mode">
+                <i class="fas fa-moon" id="toggle-icon"></i>
+            </button>
+        </nav>
+    </header>
 
-    <div class="content-section">
+    <main class="content-section">
+        <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-10 col-sm-10 col-lg-5 col-md-5 text-center">
+                    <div class="col-12 col-md-5 text-center">
                         <div class="profile-image-container">
-                            <img class="profile-image" src="img/user.svg" alt="Peru Alpert">
+                            <img class="profile-image" src="img/peruAlpert.png" alt="Peru Alpert - React Native Developer Photo">
                         </div>
                     </div>
-                    <div class="col-10 col-sm-10 col-lg-7 col-md-7">
-                        <div class="profile-text">
-                            <h1 class="animate-text">React Native Developer</h1>
+                    <div class="col-12 col-md-7">
+                        <div class="profile-text text-md-left">
+                            <span class="badge-location"><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</span>
+                            <h1 class="animate-text font-outfit">React Native Developer</h1>
                             <p class="title-desc animate-text">
-                                Passionate about creating beautiful and functional mobile applications.
-                                Specializing in React Native development with a focus on user experience.
+                                Hi, I'm Peru. I'm a mobile app developer with 5+ years of experience specializing in building highly performant, visual, and user-centric iOS & Android applications.
                             </p>
-                            <a href="PeruCV.pdf" target="_blank" class="cv-link">
-                                <i class="fas fa-file-alt"></i> View My CV
-                            </a>
+                            <p class="bio-summary animate-text">
+                                Over the past few years, I've designed and delivered robust mobile products alone and as part of agile team environments. I specialize in crafting fluid custom animations, real-time messaging, Agora-based live streaming, payment integrations, and location-based services.
+                            </p>
+                            <div class="about-actions">
+                                <a href="PeruCV.pdf" target="_blank" class="cv-link" aria-label="Open Peru Alpert CV PDF in a new tab">
+                                    <i class="fas fa-file-alt"></i> View My Resume
+                                </a>
+                                <a href="#contact" class="contact-btn-link">Let's Talk</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Skills Section -->
                 <div class="skills-section">
-                    <h2 class="section-title">Technical Skills</h2>
+                    <h2 class="section-title font-outfit">Core Expertise</h2>
+                    <p class="section-subtitle">Technologies and libraries I use to build premium mobile applications</p>
                     <div class="skills-grid">
                         <div class="skill-card">
-                            <i class="fas fa-magic"></i>
-                            <h3>Animation</h3>
+                            <i class="fas fa-magic icon-react"></i>
+                            <h3>Animations</h3>
+                            <p>Reanimated & LayoutAnimations</p>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-comments"></i>
+                            <i class="fas fa-comments icon-gifted"></i>
                             <h3>Gifted Chat</h3>
+                            <p>Real-time chat UI integration</p>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-box"></i>
+                            <i class="fas fa-box-open icon-redux"></i>
                             <h3>Redux Toolkit</h3>
+                            <p>Global app state management</p>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-chart-line"></i>
-                            <h3>React Native Clarity</h3>
+                            <i class="fas fa-chart-line icon-clarity"></i>
+                            <h3>RN Clarity</h3>
+                            <p>Analytics & user session insights</p>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-route"></i>
+                            <i class="fas fa-route icon-nav"></i>
                             <h3>React Navigation</h3>
+                            <p>Sleek and secure routing flows</p>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-code"></i>
-                            <h3>Hooks</h3>
+                            <i class="fas fa-cubes icon-hooks"></i>
+                            <h3>Custom Hooks</h3>
+                            <p>Clean, modular, & reusable logic</p>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-language"></i>
+                            <i class="fas fa-language icon-lang"></i>
                             <h3>i18next</h3>
+                            <p>Multi-language localization</p>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-server"></i>
-                            <h3>RESTful API</h3>
+                            <i class="fas fa-code icon-ts"></i>
+                            <h3>TypeScript</h3>
+                            <p>Type-safe codebase development</p>
                         </div>
                         <div class="skill-card">
-                            <i class="fab fa-git-alt"></i>
-                            <h3>Git</h3>
+                            <i class="fas fa-server icon-api"></i>
+                            <h3>REST & GraphQL</h3>
+                            <p>Robust server communications</p>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-video"></i>
-                            <h3>Agora</h3>
+                            <i class="fas fa-video icon-agora"></i>
+                            <h3>Agora & Video</h3>
+                            <p>Live streams, video feeds, call systems</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title">My Projects</h2>
+                <h2 class="section-title font-outfit">Featured Work</h2>
+                <p class="section-subtitle">Mobile apps I have designed, developed, and deployed</p>
+                
                 <div class="projects-column">
-                    <div class="project-item">
+                    <!-- Project 1: HighHigh (Mockup Image) -->
+                    <article class="project-item">
+                        <div class="project-info">
+                            <span class="project-badge current-badge">Feb 2023 – Apr 2026</span>
+                            <h3>HighHigh</h3>
+                            <p class="project-description">
+                                A high-growth creator and marketing social platform. Created user stories, reels, customized text/video post feeds, live streaming, and rich real-time communication modules.
+                            </p>
+                            <div class="project-details-list">
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Integrated **Agora SDK** for high-quality live video streaming and reels.</li>
+                                    <li><i class="fas fa-check-circle"></i> Developed Twitter-like post cards with Facebook-style emotional reaction counters.</li>
+                                    <li><i class="fas fa-check-circle"></i> Implemented **Gifted Chat** with a custom video/image picker.</li>
+                                </ul>
+                            </div>
+                            <div class="project-tags">
+                                <span>React Native</span>
+                                <span>Redux Toolkit</span>
+                                <span>Agora API</span>
+                                <span>Gifted Chat</span>
+                            </div>
+                        </div>
+                        <div class="project-visual-wrapper">
+                            <!-- CSS Smartphone Mockup -->
+                            <div class="phone-mockup">
+                                <div class="phone-screen">
+                                    <img src="img/highhigh.png" alt="HighHigh Social App Interface" loading="lazy">
+                                </div>
+                                <div class="phone-notch"></div>
+                                <div class="phone-button"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Rescounts (Mockup Image) -->
+                    <article class="project-item reverse">
+                        <div class="project-info">
+                            <span class="project-badge current-badge">Feb 2022 – Nov 2024</span>
+                            <h3>Rescounts</h3>
+                            <p class="project-description">
+                                A robust restaurant ordering and table booking application that allows diners to reserve spots and preorder meals to skip long queues.
+                            </p>
+                            <div class="project-details-list">
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Built an interactive restaurant table booking engine with custom date/time pickers.</li>
+                                    <li><i class="fas fa-check-circle"></i> Designed structured menus using React Native SectionLists for fast rendering.</li>
+                                    <li><i class="fas fa-check-circle"></i> Integrated **Google Maps API** for live dealer location tracking and geofencing.</li>
+                                    <li><i class="fas fa-check-circle"></i> Integrated **Stripe** payment gateway for secure transactions.</li>
+                                </ul>
+                            </div>
+                            <div class="project-tags">
+                                <span>React Native</span>
+                                <span>Stripe Pay</span>
+                                <span>Google Maps</span>
+                                <span>SectionList</span>
+                            </div>
+                        </div>
+                        <div class="project-visual-wrapper">
+                            <!-- CSS Smartphone Mockup -->
+                            <div class="phone-mockup">
+                                <div class="phone-screen">
+                                    <img src="img/rescounts.png" alt="Rescounts Restaurant App Interface" loading="lazy">
+                                </div>
+                                <div class="phone-notch"></div>
+                                <div class="phone-button"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Suzuki Project (Video) -->
+                    <article class="project-item">
                         <div class="project-info">
                             <h3>Suzuki Project</h3>
-                            <p class="project-description">A modern mobile application showcasing Suzuki's latest products and services.</p>
+                            <p class="project-description">
+                                A premium mobile application for Suzuki showcasing vehicles, scheduling test drives, and locating dealers.
+                            </p>
+                            <div class="project-details-list">
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Implemented automotive photo galleries and specs sheets.</li>
+                                    <li><i class="fas fa-check-circle"></i> Used Firebase for real-time customer support chat and user data.</li>
+                                </ul>
+                            </div>
                             <div class="project-tags">
                                 <span>React Native</span>
                                 <span>Redux</span>
                                 <span>Firebase</span>
                             </div>
                         </div>
-                        <div class="project-video">
-                            <video controls autoplay muted loop>
-                                <source src="suzuki.mp4" type="video/mp4">
-                            </video>
+                        <div class="project-visual-wrapper">
+                            <!-- CSS Smartphone Mockup -->
+                            <div class="phone-mockup">
+                                <div class="phone-screen">
+                                    <video controls autoplay muted loop playsinline aria-label="Suzuki App Walkthrough Video">
+                                        <source src="suzuki.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="phone-notch"></div>
+                                <div class="phone-button"></div>
+                            </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-item reverse">
+                    <!-- Project 4: Sovio Project (Video) -->
+                    <article class="project-item reverse">
                         <div class="project-info">
                             <h3>Sovio Project</h3>
-                            <p class="project-description">An innovative e-commerce platform with real-time inventory management.</p>
+                            <p class="project-description">
+                                A high-end e-commerce platform boasting instant stock updates, shopping carts, and Stripe payments.
+                            </p>
+                            <div class="project-details-list">
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Designed a smooth, fast checkout pipeline.</li>
+                                    <li><i class="fas fa-check-circle"></i> Used MongoDB and Node.js for backend inventory tracking.</li>
+                                </ul>
+                            </div>
                             <div class="project-tags">
                                 <span>React Native</span>
                                 <span>Node.js</span>
                                 <span>MongoDB</span>
                             </div>
                         </div>
-                        <div class="project-video">
-                            <video controls autoplay muted loop>
-                                <source src="sovio.MP4" type="video/mp4">
-                            </video>
+                        <div class="project-visual-wrapper">
+                            <!-- CSS Smartphone Mockup -->
+                            <div class="phone-mockup">
+                                <div class="phone-screen">
+                                    <video controls autoplay muted loop playsinline aria-label="Sovio App Walkthrough Video">
+                                        <source src="sovio.MP4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="phone-notch"></div>
+                                <div class="phone-button"></div>
+                            </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-item">
+                    <!-- Project 5: Cammani Project (Video) -->
+                    <article class="project-item">
                         <div class="project-info">
                             <h3>Cammani Project</h3>
-                            <p class="project-description">A social media platform for photographers and artists.</p>
+                            <p class="project-description">
+                                A social platform dedicated to photographers and digital artists to share, showcase, and license creative assets.
+                            </p>
+                            <div class="project-details-list">
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Utilized GraphQL queries for highly optimized image/feed downloads.</li>
+                                    <li><i class="fas fa-check-circle"></i> Hosted user media securely via AWS S3.</li>
+                                </ul>
+                            </div>
                             <div class="project-tags">
                                 <span>React Native</span>
                                 <span>GraphQL</span>
-                                <span>AWS</span>
+                                <span>AWS Services</span>
                             </div>
                         </div>
-                        <div class="project-video">
-                            <video controls autoplay muted loop>
-                                <source src="cammani.mp4" type="video/mp4">
-                            </video>
+                        <div class="project-visual-wrapper">
+                            <!-- CSS Smartphone Mockup -->
+                            <div class="phone-mockup">
+                                <div class="phone-screen">
+                                    <video controls autoplay muted loop playsinline aria-label="Cammani App Walkthrough Video">
+                                        <source src="cammani.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="phone-notch"></div>
+                                <div class="phone-button"></div>
+                            </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-item reverse">
+                    <!-- Project 6: Caffee Project (Video) -->
+                    <article class="project-item reverse">
                         <div class="project-info">
                             <h3>Caffee Project</h3>
-                            <p class="project-description">A modern coffee shop management and ordering system.</p>
+                            <p class="project-description">
+                                A modern cafe administration and fast-ordering client app featuring real-time menu modifications and rewards tracking.
+                            </p>
+                            <div class="project-details-list">
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Designed coffee customization picker screens.</li>
+                                    <li><i class="fas fa-check-circle"></i> Set up custom push notifications for order progress updates.</li>
+                                </ul>
+                            </div>
                             <div class="project-tags">
                                 <span>React Native</span>
                                 <span>Firebase</span>
                                 <span>Node.js</span>
                             </div>
                         </div>
-                        <div class="project-video">
-                            <video controls autoplay muted loop>
-                                <source src="caffee.MP4" type="video/mp4">
-                            </video>
+                        <div class="project-visual-wrapper">
+                            <!-- CSS Smartphone Mockup -->
+                            <div class="phone-mockup">
+                                <div class="phone-screen">
+                                    <video controls autoplay muted loop playsinline aria-label="Caffee App Walkthrough Video">
+                                        <source src="caffee.MP4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="phone-notch"></div>
+                                <div class="phone-button"></div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Freelance Projects Subsection -->
+                    <div class="freelance-section">
+                        <h3 class="freelance-title font-outfit">Freelance Projects</h3>
+                        <p class="section-subtitle">Diverse full-cycle mobile applications built for various business domains</p>
+                        
+                        <div class="freelance-grid">
+                            <!-- Freelance Project 1: Riadi -->
+                            <div class="freelance-card">
+                                <div>
+                                    <h4><i class="fas fa-running"></i> Riadi App</h4>
+                                    <p>Sports field booking and tournament management platform allowing users to find local fields, schedule games, and track tournament standings.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span>React Native</span>
+                                    <span>Booking Engine</span>
+                                    <span>Tournament API</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Freelance Project 2: MG Plumbers -->
+                            <div class="freelance-card">
+                                <div>
+                                    <h4><i class="fas fa-wrench"></i> MG Plumbers</h4>
+                                    <p>Location-based utility and product service application connecting users with professional local plumbing services and maintenance bookings.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span>React Native</span>
+                                    <span>Geolocation</span>
+                                    <span>Job Dispatch</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Freelance Project 3: Rida -->
+                            <div class="freelance-card">
+                                <div>
+                                    <h4><i class="fas fa-book-open"></i> Rida</h4>
+                                    <p>A sleek, interactive e-reader application built for reading publications, books, and articles with custom viewing adjustments.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span>React Native</span>
+                                    <span>E-Reader Engine</span>
+                                    <span>PDF Reader</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Freelance Project 4: Ofor Gomla -->
+                            <div class="freelance-card">
+                                <div>
+                                    <h4><i class="fas fa-shopping-basket"></i> Ofor Gomla</h4>
+                                    <p>A high-performance e-commerce platform (وفر جملة) designed for bulk purchase ordering, discount tracking, and cart management.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span>React Native</span>
+                                    <span>Bulk E-commerce</span>
+                                    <span>Cart Logic</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="contact-cards">
-                            <a href="https://github.com/PeruAlpert" target="_blank" class="contact-card">
-                                <i class="fab fa-github"></i>
-                                <div class="contact-card-content">
-                                    <h3>GitHub</h3>
-                                    <p>@PeruAlpert</p>
-                                </div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/peru-alpert-b4b946171" target="_blank" class="contact-card">
-                                <i class="fab fa-linkedin"></i>
-                                <div class="contact-card-content">
-                                    <h3>LinkedIn</h3>
-                                    <p>Peru Alpert</p>
-                                </div>
-                            </a>
-                            <a href="mailto:peroalbert@gmail.com" class="contact-card">
-                                <i class="fas fa-envelope"></i>
-                                <div class="contact-card-content">
-                                    <h3>Email</h3>
-                                    <p>peroalbert@gmail.com</p>
-                                </div>
-                            </a>
-                            <a href="https://wa.me/201274932664" target="_blank" class="contact-card">
-                                <i class="fab fa-whatsapp"></i>
-                                <div class="contact-card-content">
-                                    <h3>WhatsApp</h3>
-                                    <p>01274932664</p>
-                                </div>
-                            </a>
-                            <a href="tel:01277444422" class="contact-card">
-                                <i class="fas fa-phone"></i>
-                                <div class="contact-card-content">
-                                    <h3>Call</h3>
-                                    <p>01277444422</p>
-                                </div>
-                            </a>
+                <h2 class="section-title font-outfit">Connect With Me</h2>
+                <p class="section-subtitle">Let's discuss how we can build your next mobile application project</p>
+                
+                <div class="contact-grid">
+                    <a href="https://github.com/PeruAlpert" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Visit Peru Alpert's GitHub Profile">
+                        <i class="fab fa-github"></i>
+                        <div class="contact-card-content">
+                            <h3>GitHub</h3>
+                            <p>@PeruAlpert</p>
                         </div>
-                    </div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/peru-alpert-b4b946171" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Visit Peru Alpert's LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                        <div class="contact-card-content">
+                            <h3>LinkedIn</h3>
+                            <p>Peru Alpert</p>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:peroalbert@gmail.com" class="contact-card" aria-label="Send email to Peru Alpert">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-card-content">
+                            <h3>Email</h3>
+                            <p>peroalbert@gmail.com</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://wa.me/201277444422" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Chat with Peru Alpert on WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="contact-card-content">
+                            <h3>WhatsApp</h3>
+                            <p>01277444422</p>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:+201277444422" class="contact-card" aria-label="Call Peru Alpert">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-card-content">
+                            <h3>Call Direct</h3>
+                            <p>+20 1277444422</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
+    <footer class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Peru Alpert. All Rights Reserved. Crafted with passion.</p>
+    </footer>
+
+    <!-- Injecting the scripts -->
     <script>
         // Smooth scroll for navigation
         document.querySelectorAll('.nav-tabs a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                document.getElementById(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                
-                // Update active state
-                document.querySelectorAll('.nav-tabs a').forEach(tab => {
-                    tab.classList.remove('active');
-                });
-                this.classList.add('active');
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#')) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                    
+                    // Update active state
+                    document.querySelectorAll('.nav-tabs a').forEach(tab => {
+                        tab.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
             });
         });
 
@@ -259,23 +549,28 @@
             const navItems = document.querySelectorAll('.nav-tabs a');
             
             let current = '';
+            const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
             
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 60) {
+                if (scrollPos >= sectionTop - 150) {
                     current = section.getAttribute('id');
                 }
             });
 
-            navItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('href').substring(1) === current) {
-                    item.classList.add('active');
-                }
-            });
+            if (current) {
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href') === `#${current}`) {
+                        item.classList.add('active');
+                    }
+                });
+            }
         });
+
     </script>
+    <script src="js/load.js"></script>
 </body>
 
 </html>

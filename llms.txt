@@ -1,0 +1,60 @@
+# Peru Alpert - React Native Developer
+
+Peru Alpert is a professional React Native Developer with 5+ years of experience specializing in AI-accelerated development and modern mobile app methodologies. Built highly performant, visual, and user-centric iOS and Android applications. Based in Cairo, Egypt.
+
+## Contact Information
+- **Email**: peroalbert@gmail.com
+- **Phone / Call / WhatsApp**: +201277444422 (https://wa.me/201277444422)
+- **GitHub**: https://github.com/PeruAlpert
+- **LinkedIn**: https://www.linkedin.com/in/peru-alpert-b4b946171
+- **Portfolio Website**: https://perualpert.github.io
+
+## Professional Summary
+- React Native mobile app developer with 5+ years of experience creating efficient, cross-platform apps.
+- Expert in mobile app animations, custom UI flows, performance profiling, and third-party integrations (e.g., live streaming, real-time chats, maps, payments).
+- Delivered a core React Native application resulting in a 20% increase in user engagement by implementing advanced social features (Twitter-like feeds, Facebook-like reactions, stories, reels, ads, dark mode, and Agora-powered live streaming).
+- Experienced working both as an autonomous developer and in agile collaborative team structures.
+
+## Technical Skills
+- **Core**: React Native, Redux Toolkit, React Navigation, TypeScript, Git, RESTful API
+- **Features/Libraries**: Animations (Reanimated, LayoutAnimations), Gifted Chat (Real-time chat), Agora (Live streaming), i18next (Localization), Video Processing, Media Picker, Google Maps API, Stripe payments, 3D Models, Multi-slider
+
+## Work Experience
+
+### React Native Developer | HighHigh
+*Feb 2023 - Apr 2026*
+- HighHigh is a social media and marketing platform focused on user engagement and interactive content creation.
+- **Key Contributions**: Developed and implemented multiple user stories and core application features. Built reels and short-form video functionalities. Integrated real-time chat using Gifted Chat. Developed social interaction features, including Twitter-style posts and Facebook-like reactions. Implemented live streaming capabilities and media handling features. Enhanced user experience through advanced animations. Integrated image/video picker functionalities.
+
+### React Native Developer | Rescounts
+*Feb 2022 - Nov 2024*
+- Rescounts is a restaurant dining and reservation app helping users reserve tables and preorder meals to avoid waiting in lines.
+- **Key Contributions**: Developed reservation and booking functionalities. Implemented date & time pickers for reservation scheduling. Built dynamic, optimized SectionList-based interfaces. Integrated Stripe payment gateway. Implemented Google Maps and real-time location services. Improved application usability through custom animations.
+
+### React Native Developer | Modern Motors
+*Jan 2021 - Mar 2021*
+- Modern Motors (Saudi Investment Group) booking support and car dealer location app.
+- **Key Contributions**: Developed interactive 3D car model features. Implemented multilingual support and localization features. Integrated map and location-based services for dealer navigation. Enhanced UI/UX with animations.
+
+### React Native Developer | WinWin
+*Aug 2019 - Mar 2020*
+- WinWin is a service-based platform offering annual subscription services across multiple categories.
+- **Key Contributions**: Participated in the development and maintenance of mobile application features. Contributed to delivering a smooth and responsive user experience. Collaborated with the development team to enhance performance.
+
+## Freelance Projects
+- **Riadi App**: Sports field booking and tournament management platform allowing users to find local fields, schedule games, and track tournament standings.
+- **MG Plumbers**: Location-based utility and product service application connecting users with local plumbing services and maintenance bookings.
+- **Rida**: A sleek, interactive e-reader application built for reading publications, books, and articles.
+- **Ofor Gomla (وفر جملة)**: A high-performance e-commerce platform designed for bulk purchase ordering, discount tracking, and cart management.
+
+## Featured Portfolio Projects
+1. **HighHigh**: Social media creator reels, stories, reaction posts, Agora live streaming, and Gifted Chat.
+2. **Suzuki Project**: Automotive showcases, booking test drives, Firebase chat.
+3. **Sovio Project**: E-commerce, inventory management, Node/Mongo backend, Stripe payments.
+4. **Cammani Project**: Social platform for photographers/artists, AWS S3 media, GraphQL API.
+5. **Caffee Project**: Cafe ordering client, menu updates, Firebase support.
+
+## Education
+- **Bachelor of Computer Science** | Shrouk Academy (09/2016 - 07/2020)
+  - **Grade**: Excellent
+  - **Graduation Project**: Object detection and classification system.
